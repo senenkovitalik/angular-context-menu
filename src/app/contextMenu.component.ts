@@ -11,14 +11,12 @@ export class ContextMenuComponent  {
   private left = 0;
 
   public open($event) {
-    console.log('Open context menu', $event.clientX, $event.clientY);
     this.top = $event.clientY,
     this.left = $event.clientX
     this.isOpen = true;
   }
 
   public close() {
-    console.log('Close context menu');
     this.isOpen = false;
   }
 }

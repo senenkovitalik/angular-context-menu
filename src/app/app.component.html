@@ -1,7 +1,11 @@
 <div (click)="toggleContextMenu($event)" style="border: 1px solid black; width: 100%; height: 500px;">
 	<context-menu #contextMenu>
-		<li (click)="showItem()"><span>Show</span></li>
-		<li (click)="changeItemState()"><span>Collapse</span></li>
+		<context-menu-item (click)="showItem()">
+      <span>Show</span>
+    </context-menu-item>
+		<context-menu-item (click)="changeItemState()">
+      <span>Collapse</span>
+    </context-menu-item>
 	</context-menu>
 
 	<p>
